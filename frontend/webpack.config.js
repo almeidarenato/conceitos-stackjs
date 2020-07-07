@@ -30,7 +30,7 @@ module.exports = {
         ],
       },
       {
-        test: /.*\(git|png|jpe?g)$/i,
+        test: /.*\.(git|png|jpe?g)$/i,
         use: [
           {
             loader: "file-loader",

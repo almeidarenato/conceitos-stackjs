@@ -1,9 +1,11 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const { uuid, isUuid } = require("uuidv4");
 
 const projects = [];
 
+app.use(cors());
 app.use(express.json());
 app.get("/", (request, response) => {
   response.json(projects);
